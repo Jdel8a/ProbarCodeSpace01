@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Logotipo del Gobierno de La Rioja -->
+    <div style="width:100%; display:flex; justify-content:center; align-items:center; background:#fff; padding:16px 0 8px 0;">
+        <img src="https://www.larioja.org/recursos/img/logo-gobierno-la-rioja.svg" alt="Gobierno de La Rioja" style="height:48px; max-width:90vw;">
+    </div>
+    <!-- Menú de navegación principal -->
+    <nav style="width:100%; background:#0078d7; padding:10px 0; margin-bottom:30px;">
+        <ul style="display:flex; justify-content:center; list-style:none; margin:0; padding:0; gap:30px;">
+            <li><a href="#inicio" style="color:#fff; text-decoration:none; font-weight:bold;">Inicio</a></li>
+            <li><a href="#contacto" style="color:#fff; text-decoration:none; font-weight:bold;">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- Sección de saludo y cuenta atrás -->
+    <h1 id="greeting">Hello World</h1>
+    <div id="countdown" style="font-size:2em; margin: 20px 0; color: #0078d7;">Cuenta atrás: <span id="timer">10</span> s</div>
+    <button onclick="changeGreeting()">Cambiar saludo</button>
+
+    <!-- Sección de contacto con formulario clásico -->
+    <section id="contacto" style="margin-top:40px; width:100%; max-width:400px;">
+        <h2>Contacto</h2>
+        <form id="contactForm" style="display:flex; flex-direction:column; gap:15px; background:#fff; padding:20px; border-radius:8px; box-shadow:0 2px 8px #0001;">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="formMsg" style="margin-top:10px; color:green;"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
